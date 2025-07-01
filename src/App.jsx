@@ -2,19 +2,18 @@ import React from 'react';
 
 const App = () => {
   const containerStyle = {
-    height: '100vh',
-    width: '100vw',
+    minHeight: '100vh',
+    width: '100%',
     backgroundColor: '#ffffff',
     color: '#000000',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: '0.5rem',
+    padding: '1rem',
     margin: '0',
     fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
-    boxSizing: 'border-box',
-    overflow: 'hidden'
+    boxSizing: 'border-box'
   };
 
   const contentWrapperStyle = {
@@ -22,13 +21,14 @@ const App = () => {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    width: '100%',
-    maxWidth: '60%'
+    gap: 'clamp(1rem, 3vw, 2rem)',
+    maxWidth: '90%',
+    width: '100%'
   };
 
   const logoStyle = {
-    width: '100%',
-    maxHeight: '60vh',
+    maxWidth: '100%',
+    maxHeight: '50vh',
     height: 'auto',
     display: 'block',
     objectFit: 'contain'
@@ -39,11 +39,7 @@ const App = () => {
     fontWeight: '500',
     textAlign: 'center',
     margin: '0',
-    marginTop: '20px',
-    letterSpacing: '0.05em',
-    width: '100%',
-    position: 'relative',
-    transform: 'translateX(8%)'
+    letterSpacing: '0.05em'
   };
 
   // Global styles reset
@@ -55,18 +51,14 @@ const App = () => {
     }
     
     html, body {
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      position: fixed;
-      top: 0;
-      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
     }
     
     #root {
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
+      width: 100%;
+      min-height: 100vh;
     }
   `;
 
