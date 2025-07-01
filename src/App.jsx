@@ -21,7 +21,6 @@ const App = () => {
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 'clamp(1rem, 3vw, 2rem)',
     maxWidth: '90%',
     width: '100%'
   };
@@ -39,6 +38,7 @@ const App = () => {
     fontWeight: '500',
     textAlign: 'center',
     margin: '0',
+    marginTop: '20px',
     letterSpacing: '0.05em'
   };
 
